@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*! mobil start  */
+
+.header {
+  width: 87px;
+  margin: 50px auto 40px auto;
+}
+
+.calc {
+  background-color: #fff;
+  box-shadow: 0px 32px 43px 0px #4fa6af33;
+  border-radius: 16px 16px 0 0;
+  padding-block: 32px;
+}
+
+.calc input {
+  margin-top: 6px;
+  margin-bottom: 32px;
+  background-color: #f3f9fa;
+  border: none;
+  width: 310px;
+  padding-block: 15px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  outline: none;
+}
+
+.calc input:hover {
+  border: 2px solid #26c2ae;
+}
+
+.calcBill {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.omer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.omer .hata {
+  color: red;
+  font-size: 25px;
+}
+
+.omer .uyari {
+  color: red;
+  font-size: 25px;
+}
+
+.calcBill p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #5e7a7d;
+}
+
+.selectTip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+
+
+.selectTip button {
+  background-color: #00474b;
+  color: #fff;
+  border: none;
+  padding-block: 6px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.selectTip .custom {
+  width: 147px;
+  padding-block: 9px;
+  margin: 0;
+  background-color: #f3f9fa;
+  color: #547878;
+  text-align: right;
+  outline: none;
+  border: none;
+}
+
+.calcTip {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin: 0 auto;
+  gap: 20px;
+  background-color: #00474b;
+  padding-block: 30px;
+  border-radius: 20px;
+}
+
+.calcTip button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #26c2ae;
+  color: #00474b;
+  border: none;
+  padding-block: 9px;
+  border-radius: 8px;
+}
+
+.calcTipBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.calcTipBox h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #fff;
+}
+
+.calcTipBox p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  text-align: left;
+  color: #7f9d9f;
+}
+
+.calcTipBox h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 47.39px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  color: #26c2ae;
+}
+
+/*! mobil end  */
+
+/*! dekstop start  */
+
+@media (width >= 1024px) {
+  .container {
+    padding-bottom: 230px;
+  }
+
+  .header {
+    width: 87px;
+    margin: 163px auto 87px auto;
+  }
+
+  .calc {
+    margin: 0 auto;
+    width: 920px;
+    border-radius: 16px;
+    display: flex;
+    gap: 48px;
+  }
+
+  .calcBill {
+    width: 380px;
+    margin: 0 auto;
+  }
+
+  .calcBill input {
+    width: 380px;
+  }
+
+  .selectTip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .selectTip button:hover {
+    background-color: #9fe8df;
+    color: #00474b;
+  }
+
+  .selectTip .custom:hover {
+    border: 2px solid #26c2ae;
+    background-color: #f3f9fa;
+  }
+
+  .calcTipBox h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71.09px;
+    letter-spacing: -1px;
+    text-align: right;
+  }
+
+  .calcTip {
+    padding-block: 40px;
+    width: 413px;
+  }
+
+  .calcTipBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  .calcTip button {
+    width: 330px;
+    background-color: #0d686d;
+    opacity: 35%;
+  }
+
+  .calcTip button:hover {
+    background-color: #9fe8df;
+    opacity: 100%;
+  }
+
+  .mb {
+    margin-bottom: 122px;
+  }
+}
+
+/*! dekstop end  */

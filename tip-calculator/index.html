@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahşiş Hesaplama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tipCalc.css">
+  <script src="assets/js/tipCalc.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/img/SPLITTER.svg" alt="">
+    </div>
+    <div class="calc">
+      <div class="calcBill">
+        <div class="omer">
+          <p>Hesap</p>
+          <p class="hata"></p>
+        </div>
+        <input type="number" name="bill" placeholder="$" required class="tip">
+        <p>Bahşiş %'sini seçin</p>
+        <div class="selectTip">
+          <button>5</button>
+          <button>10</button>
+          <button>15</button>
+          <button>25</button>
+          <button>50</button>
+          <form class="customer">
+            <input name="cust" placeholder="CUSTOM" class="custom">
+          </form>
+        </div>
+        <div class="omer">
+          <p>İnsanların sayısı</p>
+          <p class="uyari"></p>
+        </div>
+        <input type="number" name="people" placeholder="👤" class="peoples">
+      </div>
+      <div class="calcTip">
+        <div class="calcTipBox">
+          <div class="calcTipText">
+            <h4>Bahşiş Tutarı</h4>
+            <p>/ kişi</p>
+          </div>
+          <div class="amount">
+            <h3 class="peopleOfTip">$0</h3>
+          </div>
+        </div>
+        <div class="calcTipBox mb">
+          <div class="calcTipText">
+            <h4>Bahşiş Tutarı</h4>
+            <p>/ kişi</p>
+          </div>
+          <div class="amount">
+            <h3 class="totalTip">$0</h3>
+          </div>
+        </div>
+        <button class="res">RESET</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
